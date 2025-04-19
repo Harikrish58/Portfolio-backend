@@ -15,7 +15,12 @@ dotenv.config();
 const app = express();
 
 // Enable CORS to allow requests from frontend
-app.use(cors());
+app.use(cors(
+  {
+    origin: process.env.FRONTEND_URL,
+    credentials: true,
+  }
+));
 
 // Middleware to parse incoming JSON requests
 app.use(express.json());
