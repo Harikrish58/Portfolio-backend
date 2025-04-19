@@ -1,5 +1,5 @@
 // Import necessary modules and the Admin model.
-import Admin from "../Models/AdminModel.js";
+import Admin from "../Models/adminModel.js";
 import bcryptjs from "bcryptjs";
 import jwt from "jsonwebtoken";
 import dotenv from "dotenv";
